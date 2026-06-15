@@ -3,8 +3,13 @@ Here we are trying to use supervised neural network for compressing MURaM simula
 
 In this directory there are a couple of notebooks with different sizes of neural networks and different aproaches in normalization of targeted physical parameters to explore how it influences the compression of the data.
 
-- The notebooks are named **nn-compression_{type of normalization}_{compressed X times}.ipynb**
-- The compression ratio was calculated as: (no. of bytes in all targets) / (no. of parameters of neural network $\times$ 4) - *we multiply by 4 because network parameters are float32*
+- Notebooks are named **`nn-compression_{normalization}_{ratio}.ipynb`**, e.g. `nn-compression_log_224.8.ipynb`
+> If there is blank space for normalization that implies standard normalization
+- Compression ratio is defined as:
+
+$$\text{compression ratio} = \frac{\text{bytes in all targets}}{\text{no. of parameters} \times 4}$$
+
+> Multiplied by 4 because network parameters are stored as float32 (4 bytes each)
 - As it follows the best performing model is the one that compresses the size the lest, which is 5.3 times. In the results we will show plots of $p$ - pressure and $B_z$ - magnetic field in z direction. We will show $p$ because it has the lowest relative error and $B_z$ because it has the largest from all the physical parameters trough all the models
 - Next to the model sizes we also investigated how normalization of $B$ and $p$ influenced the learning of models. We have only done this for 55.1 and 224.8 models, which are not the best performing ones :/
 
