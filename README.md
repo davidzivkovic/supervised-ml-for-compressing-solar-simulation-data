@@ -10,7 +10,7 @@ In this directory there are a couple of notebooks with different sizes of neural
 $$\text{compression ratio} = \frac{\text{bytes in all targets}}{\text{no. of parameters} \times 4}$$
 
 > Multiplied by 4 because network parameters are stored as float32 (4 bytes each)
-- As it follows the best performing model is the one that compresses the size the least, which is 5.3 times. In the results we will show plots of $p$ - pressure and $B_z$ - magnetic field in z direction. We will show $p$ because it has the lowest relative error and $B_z$ because it has the largest from all the physical parameters trough all the models
+- As it follows the best performing model is the one that compresses the size the least, which is 5.3 times. In the results we will show plots of $p$ - pressure and $B_z$ - magnetic field on x-y grind and x-z in some cases. We will show $p$ because it has the lowest relative error and $B_z$ because it has the largest from all the physical parameters trough all the models
 - Next to the model sizes we also investigated how normalization of $B$ and $p$ influenced the learning of models. We have only done this for 55.1 and 224.8 models, which are not the best performing ones :/
 
 ## Results
