@@ -1,4 +1,4 @@
-# Supervised machine learning for compressing the solar simulation data
+# Supervised machine learning for compressing the Solar simulation data
 Here we are trying to use supervised neural network for compressing MURaM simulation of solar atmosphere. The goal is to try and compress the fits cube from the simulation to a smaller size using ML.
 
 In this directory there are a couple of notebooks with different sizes of neural networks and different aproaches in normalization of targeted physical parameters to explore how it influences the compression of the data.
